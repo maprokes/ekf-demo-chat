@@ -18,9 +18,9 @@
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
-    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.min.js" integrity="sha512-bwPLKfnZpYDd1Hs77s0KjOem8GdWShklvPEIlCpRw0iRcytYFZt+tx3qK9Q2lA8u1Kk5V7xqNz2Nf7vgj31GdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      var socket = io();
+      var socket = io.connect('https://ekf-demo-chat.vercel.app');
       var form = document.querySelector('form');
       var input = document.querySelector('#m');
       var messages = document.querySelector('#messages');
